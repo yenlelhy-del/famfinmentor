@@ -1984,11 +1984,19 @@ button {
   .mobile-toggle { display: block; }
 }
 
+.mobile-break {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .mobile-break {
+    display: block;
+  }
+
   .container { padding: 0 20px; }
   
-  section, .insights-section, .results-section, .quiz-section, .pain-points-section, .value-section, .founders-section {
-    padding: 56px 0 !important;
+  section, .insights-section, .results-section, .quiz-section, .pain-points-section, .value-section, .founders-section, .about-section {
+    padding: 52px 0 !important;
   }
 
   .grid-3-col, .grid-4-col, .grid-2-col, .results-grid, .pricing-grid, .benefits-grid, .pillars-grid, .stats-grid, .roadmap-timeline-grid, .podcast-grid { 
@@ -1996,9 +2004,16 @@ button {
     gap: 20px;
   }
 
-  .heading-lg { font-size: 1.8rem; line-height: 1.25; }
-  .heading-md { font-size: 1.4rem; line-height: 1.3; }
+  .heading-lg { font-size: 1.85rem !important; line-height: 1.25 !important; }
+  .heading-md { font-size: 1.4rem !important; line-height: 1.3 !important; }
   .section-label { font-size: 0.75rem; padding: 4px 12px; margin-bottom: 12px; }
+
+  #nav-cta {
+    font-size: 0.8rem !important;
+    padding: 8px 12px !important;
+    min-height: 38px !important;
+    width: auto !important;
+  }
 
   .benefit-card img { height: 210px; }
   .benefit-body { padding: 22px 18px; }
@@ -2030,8 +2045,8 @@ button {
 
 @media (max-width: 480px) {
   html { font-size: 14.5px; }
-  .heading-lg { font-size: 1.65rem; }
-  .heading-md { font-size: 1.3rem; }
+  .heading-lg { font-size: 1.65rem !important; }
+  .heading-md { font-size: 1.3rem !important; }
   .pain-card, .result-card, .insight-card, .expert-card, .pricing-card, .hero-quiz-card { padding: 20px 16px; border-radius: 16px; }
   .roadmap-content { padding: 20px 14px; }
   .benefit-card img { height: 190px; }

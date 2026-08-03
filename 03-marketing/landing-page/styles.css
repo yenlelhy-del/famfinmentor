@@ -2098,6 +2098,23 @@ button {
     font-size: 0.88rem !important;
   }
 
+  /* Main body text legibility & contrast boost on mobile */
+  p, .hero-subheadline, .benefit-body p, .insight-card p, .pain-card p, .pillar-card p, .expert-card p, .about-grid p, .pricing-card p {
+    font-size: 0.98rem !important;
+    line-height: 1.62 !important;
+    color: var(--body-text) !important;
+  }
+
+  .section-header-center p, .section-header p {
+    font-size: 1.02rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .hero-subheadline {
+    font-size: 1.05rem !important;
+    line-height: 1.65 !important;
+  }
+
   .table-responsive {
     overflow-x: auto !important;
     -webkit-overflow-scrolling: touch;
@@ -2106,8 +2123,7 @@ button {
 }
 
 @media (max-width: 480px) {
-  html { font-size: 14px; }
-  .heading-lg, .hero-content h1 { font-size: 2.2rem !important; line-height: 1.18 !important; }
-  .heading-md, section h2, .section-header-center h2, .section-header h2 { font-size: 1.58rem !important; line-height: 1.25 !important; font-weight: 800 !important; }
+  .heading-lg, .hero-content h1 { font-size: 2.15rem !important; line-height: 1.18 !important; }
+  .heading-md, section h2, .section-header-center h2, .section-header h2 { font-size: 1.55rem !important; line-height: 1.25 !important; font-weight: 800 !important; }
   .benefit-card img { height: 165px !important; }
 }

@@ -2024,7 +2024,13 @@ button {
     margin-bottom: 14px !important;
   }
 
-  .heading-lg { font-size: 2.1rem !important; line-height: 1.25 !important; font-weight: 800 !important; }
+  .heading-lg, .hero-content h1 { 
+    font-size: 2.35rem !important; 
+    line-height: 1.18 !important; 
+    font-weight: 800 !important; 
+    letter-spacing: -0.035em !important;
+    margin-bottom: 16px !important;
+  }
   .heading-md { font-size: 1.45rem !important; line-height: 1.3 !important; }
   .section-label { font-size: 0.76rem; padding: 5px 12px; margin-bottom: 10px; }
   
@@ -2094,7 +2100,7 @@ button {
 
 @media (max-width: 480px) {
   html { font-size: 14px; }
-  .heading-lg { font-size: 1.6rem !important; }
-  .heading-md { font-size: 1.25rem !important; }
+  .heading-lg, .hero-content h1 { font-size: 2.2rem !important; line-height: 1.18 !important; }
+  .heading-md { font-size: 1.35rem !important; }
   .benefit-card img { height: 165px !important; }
 }

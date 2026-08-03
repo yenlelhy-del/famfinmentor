@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FinPeace Family Mentoring — Chương trình Đồng hành Tài chính Gia đình 12 tháng. Cùng cả gia đình xây dựng thói quen tài chính chung, để con tự đứng trên đôi chân mình và gia sản có người tiếp nối.">
+  <title>FinPeace Family Mentoring — Cho Con Cần Câu, Cùng Cả Gia Đình Câu Cá | Từ Gia Sản Đến Gia Phong</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css?v=2.0">
+</head>
+<body>
+
+  <!-- SITE HEADER / NAVBAR -->
+  <header class="site-header" id="header">
+    <div class="container navbar">
+      <a href="#hero" class="brand-link">
+        <img src="assets/brand/logo-green-horizontal.png" alt="FinPeace Logo" class="brand-logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#stories" class="nav-link">Câu Chuyện</a></li>
+        <li><a href="#program" class="nav-link">Triết Lý</a></li>
+        <li><a href="#roadmap" class="nav-link">Lộ Trình</a></li>
+        <li><a href="#book" class="nav-link">Sách</a></li>
+        <li><a href="#podcast" class="nav-link">Podcast</a></li>
+        <li><a href="#pricing" class="nav-link">Gói Dịch Vụ</a></li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <a href="#session0" class="btn-primary open-modal-btn" id="nav-cta">Đăng ký Session 0 →</a>
+        <div class="mobile-toggle" id="mobile-menu-toggle">
+          <svg class="icon-svg" viewBox="0 0 24 24" style="width: 24px; height: 24px; stroke: var(--contrast-dark);"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1 — HERO SECTION 2.0 WITH INTERACTIVE QUIZ WIDGET -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="section-label" style="letter-spacing: 3px; color: var(--primary-green);">FINPEACE FAMILY MENTORING</span>
+          <h1 class="heading-lg" style="font-size: clamp(2.2rem, 4.2vw, 3.2rem); font-weight: 800; letter-spacing: -0.035em; line-height: 1.2; color: var(--deep-forest-dark); margin-bottom: 20px;">
+            Chương Trình Cố Vấn <span class="text-green">Tài Chính Gia Đình</span>
+          </h1>
+          <p class="hero-subheadline" style="font-size: 1.15rem; line-height: 1.75; color: var(--contrast-dark); margin-bottom: 24px;">
+            Đồng hành giúp con làm chủ tư duy & hành vi tài chính trong <strong style="color: var(--primary-green);">12 tháng</strong>, tự tin quản lý tài chính cá nhân, thấu hiểu giá trị công sức cha mẹ và sẵn sàng tiếp nối di sản gia đình.
+          </p>
+          <div class="hero-tagline-box">
+            <svg class="icon-svg icon-svg-gold" viewBox="0 0 24 24" style="width: 20px; height: 20px; flex-shrink: 0;"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2H4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h3c0 4-2 6-4 6z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2h-4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h3c0 4-2 6-4 6z"></path></svg>
+            <span>"Cho con cần câu, cùng cả gia đình câu cá."</span>
+          </div>
+          <div class="hero-actions">
+            <button class="btn-primary open-modal-btn" id="hero-cta-btn">Đăng ký Session 0 Miễn phí →</button>
+            <a href="#roadmap" class="btn-outline">Khám phá Lộ trình 12 Tháng</a>
+          </div>
+        </div>
+
+        <!-- HERO INSPIRATIONAL VISUAL SHOWCASE CARD -->
+        <div class="hero-visual-card">
+          <div class="visual-badge">
+            <svg class="icon-svg" viewBox="0 0 24 24" style="width: 16px; height: 16px; stroke: var(--primary-green);"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span>Di Sản Liên Thế Hệ</span>
+          </div>
+          <img src="assets/images/editorial-new/family-4-hero-v7.png" alt="FinPeace Family Mentoring — Gia Đình 4 Người Đồng Hành Nhìn Về Phía Bình Minh" class="hero-editorial-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1.5 — STANDALONE INTERACTIVE READINESS QUIZ (REPLACING STATS STRIP) -->
+    <section class="quiz-section" id="quiz-assessment">
+      <div class="container">
+        <div class="quiz-section-wrapper">
+          <div class="section-header-center" style="margin-bottom: 28px;">
+            <span class="section-label">Đánh Giá Nhanh (1 Phút)</span>
+            <h2 class="heading-md">Mức Độ Sẵn Sàng Của Ba Mẹ Trong Giáo Dục Tài Chính</h2>
+            <p style="margin-top: 10px; color: var(--body-text); font-size: 1.05rem;">Khám phá rào cản và cơ hội vàng giáo dục tài chính cho con ngay hôm nay</p>
+          </div>
+          <div class="hero-quiz-card standalone-quiz-card" id="hero-quiz-container">
+            <!-- Rendered dynamically by script.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — EMOTIONAL STORIES & PAIN POINTS -->
+    <section class="pain-points-section" id="stories">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">Những Câu Chuyện Thực Tế</span>
+          <h2 class="heading-md">Mỗi Gia Đình Là Một Câu Chuyện & Trăn Trở Riêng</h2>
+          <p style="margin-top: 12px; font-size: 1.05rem; color: var(--body-text);">
+            Dù con ở độ tuổi nào, mỗi gia đình đều có những nỗi lo khác nhau trên hành trình dạy con về tiền — nhưng đằng sau tất cả luôn là mong muốn con tự lập và vững vàng bước vào đời.
+          </p>
+        </div>
+
+        <div class="pain-grid grid-3-col">
+          <div class="pain-card">
+            <div class="icon-box animated-icon">
+              <svg class="icon-svg icon-svg-lg" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <h3>Câu chuyện 1: Bé An, 10 tuổi</h3>
+            <p>Mỗi lần được bố đưa đi mua sắm, An thoải mái chọn những món đồ đắt tiền hàng triệu đồng. Con chưa đánh giá được giá trị thực sự của tiền bạc, bởi việc có được mọi thứ mình muốn vốn quá dễ dàng.</p>
+          </div>
+
+          <div class="pain-card">
+            <div class="icon-box animated-icon">
+              <svg class="icon-svg icon-svg-lg" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path></svg>
+            </div>
+            <h3>Câu chuyện 2: Minh, 15 tuổi</h3>
+            <p>Mỗi tháng Minh nhận 2 triệu tiền tiêu vặt nhưng hết sạch trước ngày 20. Bố mẹ nghĩ con tiêu hoang, nhưng thực ra Minh chưa từng được học cách phân bổ ngân sách nên chi tiêu hoàn toàn theo bản năng.</p>
+          </div>
+
+          <div class="pain-card">
+            <div class="icon-box animated-icon">
+              <svg class="icon-svg icon-svg-lg" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            </div>
+            <h3>Câu chuyện 3: Tú & Mai (18 – 20 tuổi)</h3>
+            <p>Anh cả Tú đi du học nước ngoài, em út Mai học trường quốc tế. Cả hai rất ngoan, nhưng bố mẹ luôn trăn trở: con lành quá, chưa đủ sự sắc sảo về tài chính và các mối quan hệ khi tự mình bước ra đời.</p>
+          </div>
+        </div>
+
+        <div class="pain-conclusion">
+          Con ba mẹ không thiếu thông minh. Con không thiếu tình yêu thương.<br>
+          <span class="text-green" style="font-weight: 700;">Con chỉ thiếu một không gian an toàn để học về tiền — cùng với ba mẹ.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — 5 THINGS PARENTS NEED TO KNOW -->
+    <section class="insights-section" id="insights">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">Góc Nhìn Thực Chiến</span>
+          <h2 class="heading-md">5 Điều Mọi Phụ Huynh Thế Hệ 7x–8x Cần Biết</h2>
+        </div>
+
+        <div class="insights-grid grid-3-col">
+          <div class="insight-card">
+            <div class="insight-num">01</div>
+            <h3>Tiền của con & tiền của mình: Hai thế giới khác nhau</h3>
+            <p>Ba mẹ đo tiền bằng mồ hôi. Con đo tiền bằng một cú chạm. Đó không phải con hư, mà vì tiền đã thay đổi hình dạng, nhưng chưa ai giúp con hiểu hình dạng mới đó.</p>
+          </div>
+
+          <div class="insight-card">
+            <div class="insight-num">02</div>
+            <h3>Kiến thức tài chính ≠ Thói quen tài chính</h3>
+            <div class="insight-highlight">Kiến thức chỉ ảnh hưởng 20% hành vi. 80% còn lại đến từ thói quen, cảm xúc, và niềm tin gia đình.</div>
+            <p>Một đứa trẻ thuộc lòng công thức lãi kép vẫn có thể quẹt thẻ liên tục khi buồn. Muốn thay đổi con, cả gia đình phải thay đổi môi trường.</p>
+          </div>
+
+          <div class="insight-card">
+            <div class="insight-num">03</div>
+            <h3>Cha mẹ là "giáo viên tài chính" đầu tiên</h3>
+            <p>Trước 7 tuổi, trẻ đã hình thành niềm tin gốc về tiền qua quan sát: Cãi nhau vì tiền → <em>"Tiền = xung đột"</em>. Né tránh → <em>"Tiền = bí mật"</em>. Đáp ứng mọi thứ → <em>"Tiền = luôn có sẵn"</em>.</p>
+          </div>
+
+          <div class="insight-card">
+            <div class="insight-num">04</div>
+            <h3>Không nói về tiền ≠ Bảo vệ gia đình</h3>
+            <div class="insight-highlight">Gia đình không chia rẽ vì nói về tiền. Gia đình chia rẽ vì KHÔNG BAO GIỜ nói về tiền.</div>
+            <p>Cần mở ra kênh đối thoại minh bạch, nhân văn và mang tính xây dựng để con thấu hiểu giá trị công sức cha mẹ.</p>
+          </div>
+
+          <div class="insight-card" style="grid-column: span 2;">
+            <div class="insight-num">05</div>
+            <h3>Cửa sổ vàng đang mở, nhưng sẽ không mở mãi</h3>
+            <div class="table-responsive">
+              <table class="comp-table">
+                <thead>
+                  <tr>
+                    <th>Độ tuổi của con</th>
+                    <th>Cơ hội giáo dục tài chính</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>8 – 12 tuổi</td>
+                    <td>Gieo hạt: Tiết kiệm, Phân biệt Cần vs. Muốn</td>
+                  </tr>
+                  <tr>
+                    <td>12 – 16 tuổi</td>
+                    <td>Xây nền: Quản lý dòng tiền cá nhân, đối thoại mở</td>
+                  </tr>
+                  <tr>
+                    <td style="white-space: nowrap;"><span style="color: var(--primary-green); font-weight: 600;">16 – 22 tuổi *</span></td>
+                    <td>Đầu tư thực chiến, hiểu cấu trúc gia sản, chuẩn bị kế thừa</td>
+                  </tr>
+                  <tr>
+                    <td>> 22 tuổi</td>
+                    <td>Khó can thiệp: con đã định hình thói quen riêng</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 — VALUE PROP & 4 PILLARS (RESPONSIVE CONDENSED 2X2 GRID) -->
+    <section class="value-section" id="program">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">Triết lý FinPeace Family Mentoring</span>
+          <h2 class="heading-md">FinPeace Family Mentoring không phải khóa học dạy con về tiền.</h2>
+          <p style="margin-top: 12px; font-size: 1.05rem; color: var(--body-text); font-weight: 400;">
+            FinPeace Family Mentoring là chương trình đồng hành cả năm, nơi con là nhân vật chính và cả gia đình là đội ngũ đồng hành sát cánh.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="icon-box">
+              <svg class="icon-svg icon-svg-lg icon-svg-white" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+            </div>
+            <h3>Con học qua trải nghiệm thật</h3>
+            <p>Quản lý ngân sách thật, ra quyết định thật và chịu trách nhiệm thật thay vì lý thuyết suông trên sách vở.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="icon-box">
+              <svg class="icon-svg icon-svg-lg icon-svg-white" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+            </div>
+            <h3>Bố mẹ trở thành Money Mentor</h3>
+            <p>Trang bị khuôn khẩu để hướng dẫn con, chuyển từ giảng bài áp đặt sang đồng hành nâng đỡ.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="icon-box">
+              <svg class="icon-svg icon-svg-lg icon-svg-white" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <h3>Cả nhà kết nối qua đối thoại</h3>
+            <p>Đối thoại cởi mở về tiền không tổn thương, giúp bàn ăn gia đình trở thành nơi ấm áp nhất.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="icon-box">
+              <svg class="icon-svg icon-svg-lg icon-svg-white" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3>Gia sản bảo vệ bằng cấu trúc</h3>
+            <p>Di chúc, Hiến chương Gia đình và lộ trình kế thừa được xây dựng bằng đồng thuận thay vì hy vọng.</p>
+          </div>
+        </div>
+
+        <div class="commitments-grid">
+          <div class="commitment-item">
+            <svg class="icon-svg icon-svg-gold" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Cá nhân hóa 100%:</strong> Thiết kế riêng theo DNA tài chính gia đình</span>
+          </div>
+          <div class="commitment-item">
+            <svg class="icon-svg icon-svg-gold" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Trung lập & Bảo mật:</strong> Ký thỏa thuận bảo mật NDA tuyệt đối</span>
+          </div>
+          <div class="commitment-item">
+            <svg class="icon-svg icon-svg-gold" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Đo lường kết quả:</strong> Báo cáo chuyển biến theo quý bằng dữ liệu cụ thể</span>
+          </div>
+          <div class="commitment-item">
+            <svg class="icon-svg icon-svg-gold" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Độc lập 100%:</strong> Không bán bảo hiểm, không chào mời quỹ, không hoa hồng</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 — ROADMAP 12 MONTHS WITH AGE TRACK SWITCHER -->
+    <section class="roadmap-section" id="roadmap">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">Hành Trình 12 Tháng</span>
+          <h2 class="heading-md">Lộ Trình "Từ Gia Sản Đến Gia Phong"</h2>
+          <p style="margin-top: 10px; color: var(--body-text);">Chọn độ tuổi của con để xem lộ trình đồng hành thiết kế riêng:</p>
+        </div>
+
+        <!-- AGE TRACK SWITCHER -->
+        <div class="track-switcher-wrapper">
+          <div class="track-switcher">
+            <button class="track-btn active" data-track="under18">Con < 18 Tuổi (Task-Based Learning)</button>
+            <button class="track-btn" data-track="over18">Con > 18 Tuổi (Wealth Planning Thực Chiến)</button>
+          </div>
+        </div>
+
+        <!-- MASTER 4-QUARTER TIMELINE GRID -->
+        <div id="roadmap-timeline-grid" class="roadmap-timeline-grid">
+          <!-- Rendered dynamically by script.js -->
+        </div>
+
+        <div class="roadmap-cta-banner" style="text-align: center; margin-top: 40px; background: linear-gradient(135deg, rgba(27,67,50,0.06), rgba(56,198,139,0.12)); border: 1px solid rgba(56,198,139,0.3); border-radius: var(--radius-lg); padding: 32px 24px;">
+          <h3 style="font-size: 1.3rem; color: var(--deep-forest-dark); font-weight: 700; margin-bottom: 8px;">Mỗi Gia Đình Là Một Lộ Trình Cá Nhân Hoá Riêng</h3>
+          <p style="font-size: 0.95rem; color: var(--body-text); margin-bottom: 20px; max-width: 650px; margin-left: auto; margin-right: auto;">
+            Nội dung chi tiết 12 phiên đồng hành được thiết kế độc bản theo tình hình tài chính, mục tiêu & tâm lý thực tế của từng gia đình.
+          </p>
+          <a href="#session0" class="btn-primary open-modal-btn" style="padding: 14px 32px; font-size: 1rem; box-shadow: var(--shadow-hover);">
+            Đăng Ký Session 0 Để Nhận Lộ Trình Chi Tiết →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5.5 — KEY PROGRAM BENEFITS -->
+    <section class="insights-section" id="benefits" style="background: #ffffff; padding: 100px 0;">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">Lợi Ích Nổi Bật</span>
+          <h2 class="heading-md">6 Lợi Ích Cốt Lõi Từ Chương Trình</h2>
+          <p style="margin-top: 12px; font-size: 1.05rem; color: var(--body-text);">Chuyển hóa bài học tài chính khô khan thành tư duy cuộc sống và thói quen tài chính cho cả gia đình</p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <img src="assets/images/editorial-new/chapter-09.png" alt="Tư duy đầu tư dài hạn">
+            <div class="benefit-body">
+              <span class="benefit-num-bg">01</span>
+              <h4>Tư Duy Đầu Tư Dài Hạn</h4>
+              <p>Con hiểu sức mạnh lãi suất kép, biết trân trọng giá trị thời gian và thực hành kiên nhẫn tích lũy tài sản như chăm sóc một cây quý.</p>
+            </div>
+          </div>
+          <div class="benefit-card">
+            <img src="assets/images/editorial-new/chapter-04.png" alt="Đầu tư bản thân">
+            <div class="benefit-body">
+              <span class="benefit-num-bg">02</span>
+              <h4>Đầu Tư Vào Năng Lực Tự Thân</h4>
+              <p>Con hiểu nguồn vốn con người là khoản đầu tư lớn nhất, có ý thức phát triển và gia tăng giá trị bản thân trong xã hội biến động.</p>
+            </div>
+          </div>
+          <div class="benefit-card">
+            <img src="assets/images/editorial-new/chapter-01.png" alt="Tự lập tài chính">
+            <div class="benefit-body">
+              <span class="benefit-num-bg">03</span>
+              <h4>Kỹ Năng Quản Lý Dòng Tiền</h4>
+              <p>Con tự quản lý ngân sách cá nhân, biết lên kế hoạch chi tiêu tuần/tháng và chủ động kiểm soát thói quen mua sắm.</p>
+            </div>
+          </div>
+          <div class="benefit-card">
+            <img src="assets/images/editorial-new/chapter-06.png" alt="Quỹ dự phòng gia đình">
+            <div class="benefit-body">
+              <span class="benefit-num-bg">04</span>
+              <h4>Quản Trị Rủi Ro & Bảo Vệ Tài Sản</h4>
+              <p>Con hiểu các giải pháp tài chính tầng bảo vệ, nhận diện rủi ro đầu tư và cùng gia đình xây dựng hệ an toàn tài chính.</p>
+            </div>
+          </div>
+          <div class="benefit-card">
+            <img src="assets/images/editorial-new/chapter-02.png" alt="Đối thoại gia đình">
+            <div class="benefit-body">
+              <span class="benefit-num-bg">05</span>
+              <h4>Đối Thoại & Kết Nối Hai Thế Hệ</h4>
+              <p>Con tin tưởng chủ động chia sẻ cùng ba mẹ về góc nhìn tiền bạc, xóa bỏ né tránh để tạo dựng kênh giao tiếp gia đình minh bạch.</p>
+            </div>
+          </div>
+          <div class="benefit-card">
+            <img src="assets/images/editorial-new/chapter-10.png" alt="Tự do tài chính & Di sản">
+            <div class="benefit-body">
+              <span class="benefit-num-bg">06</span>
+              <h4>Tự Do Tài Chính & An Yên Di Sản</h4>
+              <p>Con rõ mục tiêu sống, làm chủ thời gian & tiền bạc để bền chí, kiên định tiến tới cuộc sống tự chủ, bình an mơ ước.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 — RESULTS FOR CHILD, PARENTS & FAMILY -->
+    <section class="results-section" id="results">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">Giá Trị Nhận Được</span>
+          <h2 class="heading-md">Kết thúc hành trình, mỗi thành viên đều nhận được giá trị riêng</h2>
+        </div>
+
+        <div class="results-grid grid-3-col">
+          <div class="result-card">
+            <div class="result-card-header">
+              <div class="icon-box">
+                <svg class="icon-svg icon-svg-lg" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              </div>
+              <h3>Con sẽ:</h3>
+            </div>
+            <ul class="result-list">
+              <li><svg class="icon-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Tự đứng trên đôi chân mình: quản lý tốt ngân sách cá nhân</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Phân biệt rõ Cần vs. Muốn, loại bỏ chi tiêu nông nổi FOMO</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Hiểu bản đồ gia sản gia đình và công sức của cha mẹ</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Làm chủ kỹ năng đầu tư thực chiến & quản lý quỹ tích sản</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Tự tin chủ động bàn chuyện tiền bạc với bố mẹ</span></li>
+            </ul>
+          </div>
+
+          <div class="result-card">
+            <div class="result-card-header">
+              <div class="icon-box">
+                <svg class="icon-svg icon-svg-lg" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path></svg>
+              </div>
+              <h3>Bố mẹ sẽ:</h3>
+            </div>
+            <ul class="result-list">
+              <li><svg class="icon-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Hoàn thành rà soát và lập kế hoạch tài chính gia đình</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>An tâm tuyệt đối: biết con có đủ năng lực giữ gìn tài sản</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Trở thành "Money Mentor" xuất sắc của con thay vì bài giảng</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Có kế hoạch kế thừa hoàn chỉnh: Di chúc, Hiến chương, cấu trúc</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Gắn kết tình cảm sâu sắc: từ "cho tiền" sang "cùng quản trị"</span></li>
+            </ul>
+          </div>
+
+          <div class="result-card">
+            <div class="result-card-header">
+              <div class="icon-box">
+                <svg class="icon-svg icon-svg-lg" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              </div>
+              <h3>Cả gia đình sẽ:</h3>
+            </div>
+            <ul class="result-list">
+              <li><svg class="icon-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Xây dựng FFA (Family Financial Agreement): Giá trị cốt lõi và nguyên tắc gia đình đồng thuận 100%</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Thống nhất về những giá trị cốt lõi & mục tiêu của cả gia đình và từng thành viên trong ngắn và dài hạn</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Duy trì thói quen Họp Tài chính Gia đình hàng tháng</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Nói cùng ngôn ngữ tài chính chung ấm áp và nhân văn</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7 — EXPERT TEAM (CO-AUTHORS PROFILE FROM SACH.FINPEACE.CLOUD) -->
+    <section class="experts-section" id="experts">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">Đội Ngũ Cố Vấn</span>
+          <h2 class="heading-md">Về Chuyên Gia Đồng Hành</h2>
+          <p style="margin-top: 10px; color: var(--body-text); font-size: 1.08rem;">Chuyên gia thực chiến đồng hành cùng gia đình ba mẹ trên con đường thiết kế di sản tài chính tự chủ</p>
+        </div>
+
+        <div class="experts-grid">
+          <!-- Expert 1: Tuan Anh -->
+          <div class="expert-card">
+            <div class="expert-header">
+              <div style="position: relative; display: inline-block; flex-shrink: 0;">
+                <img src="assets/brand/tuan-anh-official.jpg" alt="Nguyễn Tuấn Anh" class="expert-avatar" style="width: 76px; height: 76px; object-fit: cover; border-radius: 50%; border: 2.5px solid var(--primary-green);">
+                <a href="https://www.facebook.com/tuananhfinpeace" target="_blank" rel="noopener noreferrer" style="position: absolute; bottom: 0; right: 0; width: 24px; height: 24px; border-radius: 50%; background: #1877F2; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0,0,0,0.2);" aria-label="Facebook Nguyễn Tuấn Anh">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#ffffff"><path d="M15 12H12.5V20H9.375V12H8V9.375h1.375V7.813c0-2.072 1.265-3.203 3.116-3.203.887 0 1.649.066 1.87.095V7h-1.288c-1.005 0-1.2.478-1.2 1.178v1.197H15.25L15 12z"/></svg>
+                </a>
+              </div>
+              <div>
+                <h3 style="font-size: 1.35rem; color: var(--contrast-dark); font-weight: 700;">Nguyễn Tuấn Anh</h3>
+                <span class="expert-title" style="color: var(--primary-green); font-weight: 600; font-size: 0.95rem;">Founder FinPeace & Wealth Advisor</span>
+              </div>
+            </div>
+            <p style="font-size: 1rem; color: var(--contrast-dark); line-height: 1.65; margin: 18px 0;">
+              Chuyên gia hơn 20 năm kinh nghiệm tư vấn tài chính cá nhân, quản lý tài sản và đầu tư; từng đảm nhiệm nhiều vị trí lãnh đạo tại các tổ chức tài chính uy tín như BIDV, VNDIRECT, SSI, KBSV… Kinh nghiệm làm nghề thực tế cùng bài học đắt giá kiếm và mất 1 triệu USD năm 27 tuổi giúp anh mang lại góc nhìn chân thực và sâu sắc về an yên tài chính.
+            </p>
+            <div style="background: rgba(0, 194, 114, 0.08); border-left: 3px solid var(--primary-green); padding: 12px 16px; border-radius: var(--radius-sm); font-size: 0.95rem; color: var(--deep-forest); font-weight: 600;">
+              Thạc sĩ Quản trị Kinh doanh (MBA) tại Đại học Công nghệ Auckland (New Zealand).
+            </div>
+            <p style="font-size: 0.95rem; color: var(--body-text); margin-top: 14px;"><strong>Vai trò trong chương trình:</strong> Phụ trách Cấu trúc Phần cứng: Kiến trúc gia sản, đầu tư & chiến lược tài chính liên thế hệ.</p>
+          </div>
+
+          <!-- Expert 2: Yen Le -->
+          <div class="expert-card">
+            <div class="expert-header">
+              <div style="position: relative; display: inline-block; flex-shrink: 0;">
+                <img src="assets/brand/yen-le-official.jpg" alt="Yến Lê" class="expert-avatar" style="width: 76px; height: 76px; object-fit: cover; border-radius: 50%; border: 2.5px solid var(--primary-green);">
+                <a href="https://www.facebook.com/le2yen/" target="_blank" rel="noopener noreferrer" style="position: absolute; bottom: 0; right: 0; width: 24px; height: 24px; border-radius: 50%; background: #1877F2; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0,0,0,0.2);" aria-label="Facebook Yến Lê">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#ffffff"><path d="M15 12H12.5V20H9.375V12H8V9.375h1.375V7.813c0-2.072 1.265-3.203 3.116-3.203.887 0 1.649.066 1.87.095V7h-1.288c-1.005 0-1.2.478-1.2 1.178v1.197H15.25L15 12z"/></svg>
+                </a>
+              </div>
+              <div>
+                <h3 style="font-size: 1.35rem; color: var(--contrast-dark); font-weight: 700;">Yến Lê</h3>
+                <span class="expert-title" style="color: var(--primary-green); font-weight: 600; font-size: 0.95rem;">Co-Founder FinPeace & Wealth Coach</span>
+              </div>
+            </div>
+            <p style="font-size: 1rem; color: var(--contrast-dark); line-height: 1.65; margin: 18px 0;">
+              Chuyên gia khai vấn tài chính quốc tế cấp độ ICF ACC với gần 5 năm đồng hành cùng khách hàng cá nhân. Chị có 15 năm kinh nghiệm quản trị thương hiệu và truyền thông tại các tập đoàn đa quốc gia. Hành trình chuyển dịch từ một người ngoại đạo sang Wealth Coach giúp chị thấu hiểu mọi nỗi đau tiền bạc của độc giả trẻ.
+            </p>
+            <div style="background: rgba(0, 194, 114, 0.08); border-left: 3px solid var(--primary-green); padding: 12px 16px; border-radius: var(--radius-sm); font-size: 0.95rem; color: var(--deep-forest); font-weight: 600;">
+              Tốt nghiệp Thạc sĩ tại City St. George's, University of London với Học bổng Chính phủ Anh Chevening.
+            </div>
+            <p style="font-size: 0.95rem; color: var(--body-text); margin-top: 14px;"><strong>Vai trò trong chương trình:</strong> Phụ trách Phần mềm: Coaching tâm lý, mở đối thoại gia đình & chuyển hóa thói quen.</p>
+          </div>
+
+          <!-- AI Assistant Card -->
+          <div class="ai-assistant-card">
+            <div>
+              <h3 style="font-size: 1.25rem;">
+                <svg class="icon-svg icon-svg-white" viewBox="0 0 24 24" style="margin-right: 8px;"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                FinPeace AI Assistant: Trợ lý Tài chính Gia đình 24/7
+              </h3>
+              <p style="opacity: 0.92; font-size: 1rem; margin-top: 8px;">
+                Được huấn luyện trên toàn bộ tài liệu chuyên môn FinPeace. Giải đáp thắc mắc tài chính, hỗ trợ tính toán lãi kép, gợi ý bài đọc và nhắc lịch họp tài chính giữa các buổi coaching.
+              </p>
+            </div>
+            <div style="text-align: right;">
+              <button class="btn-primary open-modal-btn" style="background: #ffffff; color: var(--deep-forest);">Đăng ký Trải nghiệm AI Assistant →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEDICATED BOOK SECTION (MOVED DOWN RIGHT AFTER EXPERT TEAM WITH REAL BOOK PHOTO) -->
+    <section class="book-section" id="book">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">Xuất Bản Nổi Bật</span>
+          <h2 class="heading-md">Sách "Bình An Tài Chính"</h2>
+          <p style="margin-top: 10px; color: var(--body-text); font-size: 1.08rem;">Hành trình làm chủ cảm xúc và các quyết định về tiền bạc trong gia đình</p>
+        </div>
+
+        <div class="book-grid">
+          <div class="book-showcase-card">
+            <span class="book-badge">Cẩm Nang Tài Chính Toàn Diện</span>
+            <div class="book-cover-img-wrap" style="width: 100%; height: 280px; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 20px; border: 1.5px solid var(--border-light); box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
+              <img src="assets/images/book-real.jpg" alt="Sách Bình An Tài Chính — FinPeace" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;">
+            </div>
+            <h3 style="font-size: 1.35rem; color: var(--contrast-dark); margin-bottom: 8px; font-weight: 700;">Bình An Tài Chính</h3>
+            <p style="font-size: 0.95rem; color: var(--primary-green); font-weight: 600;">Đồng tác giả: Nguyễn Tuấn Anh & Yến Lê</p>
+            <div class="book-quote-box">
+              "Cuốn cẩm nang tài chính cá nhân toàn diện dành riêng cho độc giả Việt Nam. Giúp bạn hiểu mình để làm chủ tiền, điều hòa dòng chảy thu nhập và thiết kế tháp tài sản bình an bền vững."
+            </div>
+            <a href="https://sach.finpeace.cloud/" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%;">
+              <span>Đọc Thử & Đặt Mua Sách Tại sach.finpeace.cloud ↗</span>
+            </a>
+          </div>
+
+          <div class="book-features-list">
+            <div class="book-feature-item">
+              <div class="book-feature-icon">
+                <svg class="icon-svg" viewBox="0 0 24 24" style="stroke: var(--primary-green);"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+              </div>
+              <div>
+                <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--contrast-dark); margin-bottom: 4px;">Hiểu Mình Để Làm Chủ Tiền</h4>
+                <p style="font-size: 0.95rem; color: var(--body-text);">Nhận diện niềm tin vô thức (Money Scripts), điều hòa cảm xúc và đưa ra quyết định tài chính sáng suốt.</p>
+              </div>
+            </div>
+
+            <div class="book-feature-item">
+              <div class="book-feature-icon">
+                <svg class="icon-svg" viewBox="0 0 24 24" style="stroke: var(--primary-green);"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              </div>
+              <div>
+                <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--contrast-dark); margin-bottom: 4px;">Thiết Kế Tháp Tài Sản Bình An</h4>
+                <p style="font-size: 0.95rem; color: var(--body-text);">Kỹ thuật quản trị 6 hũ, phân bổ tỷ trọng dòng tiền và bảo vệ tài sản liên thế hệ không biến động.</p>
+              </div>
+            </div>
+
+            <div class="book-feature-item">
+              <div class="book-feature-icon">
+                <svg class="icon-svg" viewBox="0 0 24 24" style="stroke: var(--primary-green);"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div>
+                <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--contrast-dark); margin-bottom: 4px;">Gieo Hạt Mầm Cho Thế Hệ Sau</h4>
+                <p style="font-size: 0.95rem; color: var(--body-text);">Mở rộng kịch bản đối thoại ấm áp với con cái, chuyển hóa kiến thức sách vở thành văn hóa gia phong.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEDICATED PODCAST SECTION (VNEXPRESS MEDIA - MOVED DOWN AFTER EXPERT TEAM) -->
+    <section class="podcast-section" id="podcast">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">Truyền Thông & Media</span>
+          <h2 class="heading-md">Podcast Của Chuyên Gia</h2>
+          <p style="margin-top: 10px; color: var(--body-text); font-size: 1.08rem;">Nghe các tập podcast chia sẻ kinh nghiệm tích sản và tư duy tài chính cá nhân hàng đầu</p>
+        </div>
+
+        <div class="podcast-grid">
+          <!-- Podcast Card 1 -->
+          <a href="https://www.youtube.com/watch?v=EK8pbpS32VE" target="_blank" rel="noopener noreferrer" class="podcast-card">
+            <div class="podcast-thumb-wrap">
+              <img src="https://img.youtube.com/vi/EK8pbpS32VE/hqdefault.jpg" alt="3 nguyên tắc tích sản vàng khi giá tăng cao">
+              <div class="podcast-play-btn">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="podcast-duration">36:12</div>
+            </div>
+            <div class="podcast-card-body">
+              <span class="podcast-tag">VnExpress Podcast</span>
+              <h4 class="podcast-card-title">3 nguyên tắc tích sản vàng khi giá tăng cao</h4>
+              <div class="podcast-meta">
+                <span style="font-weight: 600; color: var(--contrast-dark);">Nguyễn Tuấn Anh</span>
+                <span style="color: var(--primary-green); font-weight: 700;">Xem video ↗</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Podcast Card 2 -->
+          <a href="https://www.youtube.com/watch?v=FrH0LTtsZTE&list=PL3o7_Bjublwqh1w6Qn0SozPXYp2KzUtfG&index=44" target="_blank" rel="noopener noreferrer" class="podcast-card">
+            <div class="podcast-thumb-wrap">
+              <img src="https://img.youtube.com/vi/FrH0LTtsZTE/hqdefault.jpg" alt="Sai lầm khiến nhà đầu tư mất tiền trong biến động">
+              <div class="podcast-play-btn">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="podcast-duration">42:05</div>
+            </div>
+            <div class="podcast-card-body">
+              <span class="podcast-tag">VnExpress Podcast</span>
+              <h4 class="podcast-card-title">Sai lầm khiến nhà đầu tư mất tiền trong biến động</h4>
+              <div class="podcast-meta">
+                <span style="font-weight: 600; color: var(--contrast-dark);">Nguyễn Tuấn Anh</span>
+                <span style="color: var(--primary-green); font-weight: 700;">Xem video ↗</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Podcast Card 3 -->
+          <a href="https://www.youtube.com/watch?v=6x1oy8OASvQ" target="_blank" rel="noopener noreferrer" class="podcast-card">
+            <div class="podcast-thumb-wrap">
+              <img src="https://img.youtube.com/vi/6x1oy8OASvQ/hqdefault.jpg" alt="5 sai lầm tài chính phổ biến tuổi 20 - 30">
+              <div class="podcast-play-btn">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="podcast-duration">29:45</div>
+            </div>
+            <div class="podcast-card-body">
+              <span class="podcast-tag">VnExpress Podcast</span>
+              <h4 class="podcast-card-title">5 sai lầm tài chính phổ biến tuổi 20 - 30</h4>
+              <div class="podcast-meta">
+                <span style="font-weight: 600; color: var(--contrast-dark);">Yến Lê</span>
+                <span style="color: var(--primary-green); font-weight: 700;">Xem video ↗</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Podcast Card 4 -->
+          <a href="https://www.youtube.com/watch?v=bk3x_4fwkJQ&list=PL3o7_Bjublwqh1w6Qn0SozPXYp2KzUtfG&index=43" target="_blank" rel="noopener noreferrer" class="podcast-card">
+            <div class="podcast-thumb-wrap">
+              <img src="https://img.youtube.com/vi/bk3x_4fwkJQ/hqdefault.jpg" alt="Lương nghìn USD ví vẫn mỏng, lỗi tài chính nào?">
+              <div class="podcast-play-btn">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="podcast-duration">34:10</div>
+            </div>
+            <div class="podcast-card-body">
+              <span class="podcast-tag">VnExpress Podcast</span>
+              <h4 class="podcast-card-title">Lương nghìn USD 'ví' vẫn mỏng, lỗi tài chính nào?</h4>
+              <div class="podcast-meta">
+                <span style="font-weight: 600; color: var(--contrast-dark);">Yến Lê</span>
+                <span style="color: var(--primary-green); font-weight: 700;">Xem video ↗</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7.5 — CHILD / TEEN DIRECT CORNER (EMOTIONAL BRIDGE BEFORE PRICING) -->
+    <section class="genz-section" id="teen">
+      <div class="container genz-grid">
+        <div>
+          <span class="section-label" style="color: var(--primary-green);">Dành Riêng Cho Con</span>
+          <h2 class="heading-md" style="color: #ffffff;">"Này, đây là góc dành riêng cho bạn."</h2>
+          <p style="margin-top: 16px; opacity: 0.9; font-size: 1.05rem;">
+            Bố mẹ không cổ hủ, bố mẹ chỉ thiếu ngôn ngữ. Và bạn không vô tâm, bạn chỉ thiếu cơ hội. FinPeace Family Mentoring là nơi hai thế hệ gặp nhau giữa bàn ăn gia đình.
+          </p>
+          <div style="margin-top: 28px;">
+            <button class="btn-primary open-modal-btn" style="background: var(--primary-green);">Nói với bố mẹ: "Con muốn thử" →</button>
+          </div>
+        </div>
+        <div class="genz-card">
+          <h3 style="color: #ffffff; font-size: 1.2rem; margin-bottom: 16px;">Nhiệm vụ thực tế bạn sẽ tự mình làm:</h3>
+          <ul style="list-style: none; font-size: 0.95rem; line-height: 2;">
+            <li><svg class="icon-svg icon-svg-white" viewBox="0 0 24 24" style="margin-right: 6px;"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>Tự chia tiền tiêu vặt</strong> vào 6 Hũ cá nhân theo sở thích</li>
+            <li><svg class="icon-svg icon-svg-white" viewBox="0 0 24 24" style="margin-right: 6px;"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>Thử thách 30 ngày</strong> làm chủ nhật ký chi tiêu Cần vs. Muốn</li>
+            <li><svg class="icon-svg icon-svg-white" viewBox="0 0 24 24" style="margin-right: 6px;"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>Lên ngân sách chuyến du lịch</strong> gia đình với budget thật</li>
+            <li><svg class="icon-svg icon-svg-white" viewBox="0 0 24 24" style="margin-right: 6px;"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>Shark Tank mini:</strong> Pitch ý tưởng kinh doanh cùng bố mẹ</li>
+            <li><svg class="icon-svg icon-svg-white" viewBox="0 0 24 24" style="margin-right: 6px;"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>Quản lý Quỹ tích sản cá nhân 20-50tr</strong> (dành cho bạn >18t)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8 — PRICING & VALUE LADDER OFFERS -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">Thang Giá Trị & Kết Quả Đầu Ra Cho Con</span>
+          <h2 class="heading-md">Khoản Đầu Tư Cho Di Sản Gia Đình Liên Thế Hệ</h2>
+          <p style="margin-top: 10px; color: var(--body-text); font-size: 1.08rem;">Các phiên đồng hành cá nhân hoá theo từng mục tiêu và cá tính gia đình</p>
+        </div>
+
+        <!-- VALUE LADDER CARDS GRID -->
+        <div class="pricing-grid grid-3-col">
+          <!-- Pricing 1: Gói Khám Phá -->
+          <div class="pricing-card">
+            <div class="pricing-tier-badge" style="background: rgba(16, 40, 30, 0.06); color: var(--deep-forest); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; padding: 4px 12px; border-radius: var(--radius-pill); display: inline-block; margin-bottom: 12px;">Giai Đoạn 1: Hiểu Bản Thân</div>
+            <div class="pricing-name">
+              <svg class="icon-svg" viewBox="0 0 24 24" style="margin-right: 6px; stroke: var(--deep-forest);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              Gói Khám Phá
+            </div>
+            
+
+
+            <ul class="pricing-features" style="margin-bottom: 24px;">
+              <li><svg class="icon-svg" viewBox="0 0 24 24" style="stroke: var(--primary-green);"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Wealth Checkup & Planning: Rà soát & lập kế hoạch tài chính gia đình</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24" style="stroke: var(--primary-green);"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>3 phiên tư vấn lập kế hoạch tài chính gia đình</span></li>
+            </ul>
+            <button class="btn-outline open-modal-btn" style="width: 100%; margin-top: auto;">Đăng ký Phiên Tư Vấn 0</button>
+          </div>
+
+          <!-- Pricing 2: Gói Đồng Hành -->
+          <div class="pricing-card">
+            <div class="pricing-tier-badge" style="background: rgba(0, 194, 114, 0.12); color: var(--primary-green); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; padding: 4px 12px; border-radius: var(--radius-pill); display: inline-block; margin-bottom: 12px;">Giai Đoạn 2: Hiểu Phương Pháp</div>
+            <div class="pricing-name">
+              <svg class="icon-svg" viewBox="0 0 24 24" style="margin-right: 6px; stroke: var(--primary-green);"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+              Gói Đồng Hành
+            </div>
+
+            <ul class="pricing-features" style="margin-bottom: 24px;">
+              <li><svg class="icon-svg" viewBox="0 0 24 24" style="stroke: var(--primary-green);"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Wealth Checkup & Planning: Rà soát & lập kế hoạch tài chính gia đình</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24" style="stroke: var(--primary-green);"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>12 phiên đồng hành cố vấn tài chính gia đình</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24" style="stroke: var(--primary-green);"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Khoá học Investment Wisdom (Tinh hoa đầu tư dài hạn)</span></li>
+            </ul>
+            <button class="btn-outline open-modal-btn" style="width: 100%; margin-top: auto;">Đăng ký Phiên Tư Vấn 0</button>
+          </div>
+
+          <!-- Pricing 3: Gói Toàn Diện (Featured) -->
+          <div class="pricing-card featured" style="border-color: #b58832;">
+            <div class="featured-ribbon" style="background: #b58832; box-shadow: 0 4px 12px rgba(181, 136, 50, 0.35);">Lựa Chọn Khuyên Dùng</div>
+            <div class="pricing-tier-badge" style="background: rgba(212, 168, 83, 0.12); color: #b58832; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; padding: 4px 12px; border-radius: var(--radius-pill); display: inline-block; margin-bottom: 12px;">Giai Đoạn 3: Hành Động Từng Bước</div>
+            <div class="pricing-name">
+              <svg class="icon-svg" viewBox="0 0 24 24" style="margin-right: 6px; stroke: #b58832;"><line x1="3" y1="21" x2="21" y2="21"></line><polygon points="12 2 20 7 4 7 12 2"></polygon></svg>
+              Gói Toàn Diện
+            </div>
+
+            <ul class="pricing-features" style="margin-bottom: 24px;">
+              <li><svg class="icon-svg" viewBox="0 0 24 24" style="stroke: #b58832;"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Wealth Checkup & Planning: Rà soát & lập kế hoạch tài chính gia đình</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24" style="stroke: #b58832;"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>24 phiên đồng hành cố vấn tài chính gia đình theo lộ trình riêng</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24" style="stroke: #b58832;"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Khoá học Investment Wisdom (Tinh hoa đầu tư dài hạn)</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24" style="stroke: #b58832;"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Đồng hành Tích sản trong 24 tháng</span></li>
+              <li><svg class="icon-svg" viewBox="0 0 24 24" style="stroke: #b58832;"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Đặc quyền gia nhập FinPeace Family Council Circle</span></li>
+            </ul>
+            <button class="btn-primary open-modal-btn" style="width: 100%; margin-top: auto; background: #b58832; border-color: #b58832; color: #ffffff; font-weight: 700;">Đăng ký Phiên Tư Vấn 0 →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9 — FAQ -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">Giải Đáp Thắc Mắc</span>
+          <h2 class="heading-md">Câu Hỏi Thường Gặp Từ Phụ Huynh</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">Con tôi 17 tuổi, liệu có muộn không? <span>+</span></button>
+            <div class="faq-answer">16–22 tuổi là <span style="color: var(--primary-green); font-weight: 600;">thời điểm vàng *</span>: con đủ nhận thức để hiểu gia sản, nhưng vẫn đủ gần để lắng nghe. Với lứa tuổi 8–12, chúng tôi có hoạt động riêng phù hợp.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Con tôi không hứng thú với tài chính — làm sao kéo con vào? <span>+</span></button>
+            <div class="faq-answer">Vì con chưa thấy tài chính liên quan đến mình. Khi con được giao quản lý ngân sách du lịch gia đình, hoặc tự chia tiền tiêu vặt theo 6 Hũ — con hứng thú ngay, vì đó là tiền của con, quyết định của con.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Vợ/chồng tôi nghĩ không cần thiết? <span>+</span></button>
+            <div class="faq-answer">Rất phổ biến. Chúng tôi mời cả gia đình tham gia Session 0 miễn phí (60 phút) — sau buổi trải nghiệm thực tế đó, hầu hết đều thấy rõ giá trị gắn kết.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Khác gì các khóa học tài chính cho trẻ em trên thị trường? <span>+</span></button>
+            <div class="faq-answer">Khóa học dạy kiến thức rời rạc cho con rồi kết thúc. FinPeace đồng hành cùng cả gia đình trong 12 tháng — biến kiến thức thành thói quen, thói quen thành văn hóa gia phong. Bố mẹ là một phần quan trọng của hành trình.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Thông tin tài chính gia đình có được bảo mật không? <span>+</span></button>
+            <div class="faq-answer">Hoàn toàn bảo mật. FinPeace cam kết bảo mật tuyệt đối và ký thỏa thuận NDA bảo mật thông tin tài chính trước khi chương trình bắt đầu.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- SECTION 11 — FINAL CTA -->
+    <section class="final-cta-section" id="session0">
+      <div class="container">
+        <div class="cta-box">
+          <span class="section-label">Bước Đầu Tiên</span>
+          <h2 class="heading-md" style="margin-bottom: 20px;">
+            Ba mẹ đã cho con rất nhiều.<br>
+            Giờ, cho con thêm một thứ:<br>
+            <span class="text-green">Khả năng tự đứng trên đôi chân mình về tài chính.</span>
+          </h2>
+          <p style="font-size: 1.1rem; color: var(--body-text); margin-bottom: 32px;">
+            <strong>Session 0: Buổi Trải Nghiệm Miễn Phí (60 phút)</strong><br>
+            Cả gia đình cùng tham gia · Không cam kết · Không bán hàng
+          </p>
+          <button class="btn-primary open-modal-btn" style="padding: 18px 40px; font-size: 1.1rem;">Đăng ký Session 0 Miễn phí →</button>
+          <p style="font-size: 0.85rem; color: var(--subtle-gray); margin-top: 16px; display: flex; align-items: center; justify-content: center; gap: 16px;">
+            <span><svg class="icon-svg" viewBox="0 0 24 24" style="width: 18px; height: 18px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Bảo mật thông tin tuyệt đối</span>
+            <span><svg class="icon-svg" viewBox="0 0 24 24" style="width: 18px; height: 18px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> Không spam</span>
+            <span><svg class="icon-svg" viewBox="0 0 24 24" style="width: 18px; height: 18px;"><polyline points="20 6 9 17 4 12"></polyline></svg> Phản hồi trong 24h</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="assets/brand/logo-white-horizontal.png" alt="FinPeace Logo White" style="height: 36px; margin-bottom: 12px;">
+          <p style="opacity: 0.8; font-size: 0.9rem;">Family Mentoring — Đồng Hành Tài Chính Gia Đình</p>
+        </div>
+        <div style="text-align: right;">
+          <p style="display: flex; align-items: center; justify-content: flex-end; gap: 20px; flex-wrap: wrap;">
+            <span><svg class="icon-svg icon-svg-white" viewBox="0 0 24 24" style="width: 18px; height: 18px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 056 3959999</span>
+            <span><svg class="icon-svg icon-svg-white" viewBox="0 0 24 24" style="width: 18px; height: 18px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> info@finpeace.vn</span>
+            <span><svg class="icon-svg icon-svg-white" viewBox="0 0 24 24" style="width: 18px; height: 18px;"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"></path></svg> finpeace.vn</span>
+          </p>
+        </div>
+      </div>
+      <div class="footer-links-row" style="margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; font-size: 0.9rem;">
+        <a href="https://www.facebook.com/finpeace.vn" target="_blank" rel="noopener noreferrer" style="color: rgba(255,255,255,0.85); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+        <a href="https://finpeace.substack.com/" target="_blank" rel="noopener noreferrer" style="color: rgba(255,255,255,0.85); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+          Substack
+        </a>
+        <a href="https://open.spotify.com/show/16vEXCpleBX7ndnYrZhKaw?si=042bc2e562f94e13" target="_blank" rel="noopener noreferrer" style="color: rgba(255,255,255,0.85); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm5.521 17.341c-.217.357-.681.469-1.038.252-2.848-1.74-6.433-2.135-10.655-1.168-.403.093-.811-.161-.904-.564-.092-.403.161-.81.564-.903 4.62-1.057 8.583-.604 11.78 1.348.357.217.469.681.253 1.037zm1.472-3.275c-.273.444-.856.586-1.299.313-3.259-2.003-8.229-2.585-12.083-1.415-.5.152-1.032-.132-1.184-.632-.152-.5.132-1.032.632-1.184 4.402-1.336 9.873-.69 13.621 1.618.444.273.586.856.313 1.299zm.127-3.414C15.228 8.497 8.8 8.283 5.127 9.397c-.604.183-1.246-.168-1.429-.772-.183-.604.168-1.246.772-1.429 4.237-1.286 11.312-1.042 15.726 1.579.544.323.725 1.026.402 1.57-.323.543-1.026.724-1.57.402z"/></svg>
+          Spotify
+        </a>
+        <a href="https://sach.finpeace.cloud/" target="_blank" rel="noopener noreferrer" style="color: var(--primary-green); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+          Đặt Mua Sách ↗
+        </a>
+      </div>
+
+      <div style="text-align: center; padding-top: 16px; font-size: 0.8rem; opacity: 0.6;">
+        © 2026 FinPeace. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- REGISTRATION MODAL -->
+  <div class="modal-overlay" id="session-modal">
+    <div class="modal-card">
+      <span class="modal-close" id="modal-close">&times;</span>
+      <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--contrast-dark); margin-bottom: 8px;">Đăng ký Session 0 Miễn Phí</h3>
+      <p style="font-size: 0.9rem; color: var(--body-text); margin-bottom: 24px;">Trải nghiệm 60 phút đối thoại tài chính gia đình cùng Chuyên gia FinPeace.</p>
+
+      <form id="session-form">
+        <div class="form-group">
+          <label for="parent-name">Họ và tên Bố/Mẹ *</label>
+          <input type="text" id="parent-name" class="form-input" placeholder="Nguyễn Văn A" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Số điện thoại / Zalo *</label>
+          <input type="tel" id="phone" class="form-input" placeholder="0901 234 567" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" class="form-input" placeholder="name@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label for="child-age">Độ tuổi của con *</label>
+          <select id="child-age" class="form-input">
+            <option value="8-12">8 – 12 tuổi</option>
+            <option value="13-17" selected>13 – 17 tuổi</option>
+            <option value="18+">Trên 18 tuổi</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;">Xác nhận Đăng ký Session 0 →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js?v=2.0"></script>
+</body>
+</html>

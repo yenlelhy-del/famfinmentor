@@ -1647,10 +1647,81 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   flex-wrap: wrap;
   gap: 24px;
+}
+
+.footer-logo {
+  height: 34px;
+  margin-bottom: 8px;
+}
+
+.footer-tagline {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+}
+
+.footer-contact-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.fc-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.fc-item svg {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-links-row {
+  margin-top: 24px;
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+.footer-link-item {
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.2s ease;
+}
+
+.footer-link-item:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.footer-book-btn {
+  color: var(--primary-green) !important;
+  font-weight: 600;
+  background: rgba(0, 194, 114, 0.12);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(0, 194, 114, 0.3);
+}
+
+.footer-copyright {
+  text-align: center;
+  padding-top: 18px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* Modal Form */
@@ -2103,9 +2174,63 @@ button {
   }
   .genz-section { width: 100% !important; border-radius: 0 !important; margin: 24px 0 !important; padding: 40px 0 !important; }
   
-  .footer-grid { flex-direction: column !important; text-align: center !important; gap: 20px !important; }
-  .footer-grid div[style*="text-align: right"] { text-align: center !important; }
-  .footer-grid p[style*="flex-end"] { justify-content: center !important; flex-direction: column !important; gap: 8px !important; }
+  .site-footer {
+    padding: 36px 0 24px !important;
+    text-align: center !important;
+  }
+
+  .footer-grid {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 18px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .footer-brand-col {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .footer-logo {
+    height: 28px !important;
+    margin-bottom: 6px !important;
+  }
+
+  .footer-tagline {
+    font-size: 0.85rem !important;
+    text-align: center !important;
+  }
+
+  .footer-contact-items {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  .fc-item {
+    font-size: 0.88rem !important;
+    justify-content: center !important;
+  }
+
+  .footer-links-row {
+    margin-top: 16px !important;
+    padding-top: 16px !important;
+    gap: 14px !important;
+    justify-content: center !important;
+  }
+
+  .footer-link-item {
+    font-size: 0.85rem !important;
+  }
+
+  .footer-copyright {
+    padding-top: 14px !important;
+    font-size: 0.78rem !important;
+    text-align: center !important;
+  }
   .commitments-grid { grid-template-columns: 1fr !important; gap: 12px !important; }
 
   .quiz-option-btn, .quiz-nav-btn {

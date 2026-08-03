@@ -2239,8 +2239,8 @@ button {
     font-size: 0.88rem !important;
   }
 
-  /* Main body text legibility & contrast boost on mobile */
-  p, .hero-subheadline, .benefit-body p, .insight-card p, .pain-card p, .pillar-card p, .expert-card p, .about-grid p, .pricing-card p {
+  /* Main body text legibility & contrast boost on mobile for light cards */
+  .hero-subheadline, .benefit-body p, .insight-card p, .pain-card p, .pillar-card p, .expert-card p, .about-grid p, .pricing-card p, .result-card p, .faq-answer p {
     font-size: 0.98rem !important;
     line-height: 1.62 !important;
     color: var(--body-text) !important;
@@ -2256,12 +2256,34 @@ button {
     line-height: 1.65 !important;
   }
 
-  /* Ensure all subtext on dark background cards (AI Assistant, Roadmap headers, Footer, CTA Box, etc.) is crisp, bright white */
-  .ai-assistant-card p, .ai-assistant-card span, .rq-subtitle, .rq-header p, .rq-header span {
+  /* MASTER HIGH-CONTRAST DARK CONTAINER ENFORCEMENT ON MOBILE */
+  .genz-section h2, .genz-section h3, .genz-section h4, .genz-section .heading-md,
+  .ai-assistant-card h2, .ai-assistant-card h3, .ai-assistant-card h4,
+  .rq-header h3, .rq-header .rq-title {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+  }
+
+  .genz-section p, .genz-section span, .genz-section li, .genz-section strong,
+  .ai-assistant-card p, .ai-assistant-card span, .ai-assistant-card li, .ai-assistant-card strong,
+  .rq-subtitle, .rq-header p, .rq-header span,
+  .site-footer p, .site-footer span, .site-footer .footer-tagline, .site-footer .fc-item {
     color: #ffffff !important;
     opacity: 1 !important;
     font-size: 0.95rem !important;
-    font-weight: 400 !important;
+  }
+
+  .genz-card {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding: 24px 18px !important;
+    border-radius: 16px !important;
+    margin-top: 20px !important;
+  }
+
+  .genz-card h3, .genz-card p, .genz-card li, .genz-card strong {
+    color: #ffffff !important;
+    opacity: 1 !important;
   }
 
   .table-responsive {

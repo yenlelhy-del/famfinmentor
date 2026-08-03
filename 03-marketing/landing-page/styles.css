@@ -1960,7 +1960,7 @@ button {
   .hero-section { padding: 60px 0 80px; }
   .hero-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
   .hero-actions, .social-proof-strip { justify-content: center; }
-  .grid-3-col, .results-grid, .pricing-grid, .benefits-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .grid-3-col, .grid-4-col, .results-grid, .pricing-grid, .benefits-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
   .insights-grid, .experts-grid, .genz-grid { grid-template-columns: 1fr; }
   .ai-assistant-card { grid-template-columns: 1fr; text-align: center; }
   .ai-assistant-card div[style*="text-align: right"] { text-align: center !important; }
@@ -1991,7 +1991,7 @@ button {
     padding: 56px 0 !important;
   }
 
-  .grid-3-col, .grid-2-col, .results-grid, .pricing-grid, .benefits-grid, .pillars-grid, .stats-grid, .roadmap-timeline-grid, .podcast-grid { 
+  .grid-3-col, .grid-4-col, .grid-2-col, .results-grid, .pricing-grid, .benefits-grid, .pillars-grid, .stats-grid, .roadmap-timeline-grid, .podcast-grid { 
     grid-template-columns: 1fr; 
     gap: 20px;
   }

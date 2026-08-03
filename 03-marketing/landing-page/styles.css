@@ -2084,7 +2084,22 @@ button {
     box-sizing: border-box !important;
   }
 
-  .cta-box { padding: 28px 16px !important; border-radius: 16px !important; }
+  .cta-box { padding: 36px 18px 28px !important; border-radius: 20px !important; }
+  
+  .cta-trust-items {
+    flex-direction: column !important;
+    gap: 8px !important;
+    align-items: center !important;
+    margin-top: 16px !important;
+  }
+
+  .cta-trust-items span {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    white-space: nowrap !important;
+    font-size: 0.84rem !important;
+  }
   .genz-section { width: 100% !important; border-radius: 0 !important; margin: 24px 0 !important; padding: 40px 0 !important; }
   
   .footer-grid { flex-direction: column !important; text-align: center !important; gap: 20px !important; }

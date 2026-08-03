@@ -2131,12 +2131,12 @@ button {
     line-height: 1.65 !important;
   }
 
-  /* Ensure all subtext on dark background cards (Roadmap headers, Footer, CTA Box, etc.) is crisp, bright white */
-  .rq-subtitle, .rq-header p, .rq-header span {
+  /* Ensure all subtext on dark background cards (AI Assistant, Roadmap headers, Footer, CTA Box, etc.) is crisp, bright white */
+  .ai-assistant-card p, .ai-assistant-card span, .rq-subtitle, .rq-header p, .rq-header span {
     color: #ffffff !important;
     opacity: 1 !important;
-    font-size: 0.88rem !important;
-    font-weight: 500 !important;
+    font-size: 0.95rem !important;
+    font-weight: 400 !important;
   }
 
   .table-responsive {

@@ -355,12 +355,13 @@ Chúng tôi tin rằng năng lực tài chính không bắt đầu từ kiến t
 
 **12 tháng (Q1–Q4) · Hành trình đầy đủ 4 giai đoạn**
 
-- ✅ **Tất cả Gói Khám Phá**, cộng thêm:
-- ✅ 12+ sessions cùng cả hai chuyên gia
+- ✅ 3 phiên đồng hành cố vấn tài chính gia đình
+- ✅ Khoá học Investment Wisdom (Tinh hoa đầu tư dài hạn)
 - ✅ Lộ trình phân nhóm tuổi (Task-Based hoặc Wealth Planning)
 - ✅ Họp Tài chính Gia đình hàng tháng có hướng dẫn
 - ✅ Hiến chương Gia đình + Tuyên ngôn Di sản
 - ✅ Báo cáo chuyển biến mỗi quý
+- ✅ **Đồng hành Tích sản trong 24 tháng**
 - ✅ FinPeace AI Assistant (đầy đủ)
 - ✅ Chat group gia đình + Coach
 - ✅ Ưu tiên tái ký Năm 2
@@ -384,6 +385,17 @@ Chúng tôi tin rằng năng lực tài chính không bắt đầu từ kiến t
 - 💳 Thanh toán 1 lần hoặc 4 đợt theo quý
 
 > *~11.6 triệu/session · Bằng 1 bữa fine dining — nhưng giá trị kéo dài cả đời*
+
+---
+
+### ➕ GÓI ĐỒNG HÀNH BỔ SUNG: Đồng Hành Tích Sản Trong 24 Tháng
+
+**24 tháng · Kỷ luật tích sản & Thực hành phân bổ tài sản dài hạn**
+
+- ✅ Duy trì kỷ luật tích sản đều đặn cho con và cả gia đình suốt 2 năm
+- ✅ Hướng dẫn con & bố mẹ thực hành phân bổ danh mục đầu tư thực tế
+- ✅ Review & điều chỉnh chiến lược tích sản định kỳ theo từng biến động thị trường
+- ✅ Tối ưu hóa hiệu quả sinh lời & kiểm soát rủi ro tài sản dài hạn
 
 ---
 

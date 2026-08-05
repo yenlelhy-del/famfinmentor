@@ -1545,6 +1545,44 @@ button {
   gap: 10px;
 }
 
+/* PRICING ADD-ON BOX */
+.pricing-addon-box {
+  margin-top: 40px;
+  background: linear-gradient(135deg, rgba(0, 194, 114, 0.06) 0%, rgba(16, 40, 30, 0.03) 100%);
+  border: 1.5px dashed var(--primary-green);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  transition: var(--transition-normal);
+}
+
+.pricing-addon-box:hover {
+  border-color: #00a862;
+  box-shadow: 0 12px 28px rgba(0, 194, 114, 0.12);
+  background: linear-gradient(135deg, rgba(0, 194, 114, 0.09) 0%, rgba(16, 40, 30, 0.05) 100%);
+}
+
+@media (max-width: 768px) {
+  .pricing-addon-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 20px;
+  }
+  
+  .pricing-addon-box > div:last-child {
+    width: 100%;
+    align-items: stretch !important;
+  }
+
+  .pricing-addon-box .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* SECTION 9 — FAQ */
 .faq-section {
   padding: 100px 0;

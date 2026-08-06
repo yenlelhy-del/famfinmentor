@@ -329,62 +329,31 @@ Chúng tôi tin rằng năng lực tài chính không bắt đầu từ kiến t
 
 ---
 
-# SECTION 9 — GÓI DỊCH VỤ & ĐẦU TƯ
-## *Chọn mức đồng hành phù hợp*
+# SECTION 9 — GÓI DỊCH VỤ & ĐỒNG HÀNH GIA ĐÌNH
+## *Gói Đồng Hành Tài Chính Gia Đình Toàn Diện (Duy nhất 1 Gói)*
 
-### Dạng: 3 pricing cards
-
----
-
-### 🌱 GÓI KHÁM PHÁ — 19.000.000đ
-
-**3 tháng (Q1) · Trải nghiệm trước — quyết định sau**
-
-- ✅ 3 sessions cùng Tuấn Anh & Yến Lê
-- ✅ Family Financial Health Check + Money Script + Dialogue
-- ✅ Bức tranh tài chính gia đình
-- ✅ FinPeace AI Assistant (cơ bản)
-- ✅ Email Q&A giữa các sessions
-- 🔄 Nâng cấp lên Đồng Hành bất kỳ lúc nào — phí Q1 được trừ 100%
-
-> *~6.3 triệu/session · Phù hợp gia đình muốn "thử trước"*
+### Dạng: 1 Single Offer Card (Chia làm 2 Cấu phần: Cha Mẹ & Con)
 
 ---
 
-### 🤝 GÓI ĐỒNG HÀNH — 69.000.000đ ⭐ Được khuyến nghị
+### 🏛️ GÓI ĐỒNG HÀNH TÀI CHÍNH GIA ĐÌNH TOÀN DIỆN
 
-**12 tháng (Q1–Q4) · Hành trình đầy đủ 4 giai đoạn**
+**Hành trình tích sản & tiếp nối di sản tài chính liên thế hệ**
 
-- ✅ 3 phiên đồng hành cố vấn tài chính gia đình
-- ✅ Khoá học Investment Wisdom (Tinh hoa đầu tư dài hạn)
-- ✅ Lộ trình phân nhóm tuổi (Task-Based hoặc Wealth Planning)
-- ✅ Họp Tài chính Gia đình hàng tháng có hướng dẫn
-- ✅ Hiến chương Gia đình + Tuyên ngôn Di sản
-- ✅ Báo cáo chuyển biến mỗi quý
-- ✅ **Đồng hành Tích sản trong 24 tháng**
-- ✅ FinPeace AI Assistant (đầy đủ)
-- ✅ Chat group gia đình + Coach
-- ✅ Ưu tiên tái ký Năm 2
-- 💳 Thanh toán 1 lần hoặc 2 đợt (50/50)
+> 💡 **Cách thức triển khai:** Để bắt đầu, cha mẹ sẽ cùng nhau rà soát và lập kế hoạch tài chính gia đình. Các con sẽ tham gia ở phần triển khai hành động qua đó được đào tạo - huấn luyện về tài chính cá nhân dưới sự đồng hành của chuyên gia và cha mẹ.
 
-> *~5.7 triệu/session · Rẻ hơn 1 buổi coaching ICF quốc tế — nhưng cả gia đình tham gia*
+#### 👨‍👩‍👧‍👦 Cấu phần 1: Dành cho Cha Mẹ (Tư vấn hoạch định tài chính & đồng hành thực thi - gói GROW)
+- ✅ **Rà soát tài chính cá nhân toàn diện**
+- ✅ **Báo cáo Sức khoẻ tài chính cá nhân**
+- ✅ **Lập kế hoạch tài chính cá nhân & gia đình** chuẩn quốc tế CFP®
+- ✅ **Chọn cổ phiếu tăng trưởng & xây dựng danh mục** tích sản tối ưu
+- ✅ **Đồng hành tích sản 2 năm:** theo dõi, nhắc nhở kỷ luật SIP hàng tháng, cập nhật KQKD quý & cảnh báo biến động đặc biệt
+- ✅ **4 buổi tư vấn 1:1 chuyên sâu** trong hành trình tích sản
+- ✅ **Khoá học Tinh hoa đầu tư dài hạn** (bài giảng video)
 
----
-
-### 🏛️ GÓI TOÀN DIỆN — 139.000.000đ
-
-**12 tháng + Nâng cao · Dành cho gia đình sẵn sàng đi xa**
-
-- ✅ **Tất cả Gói Đồng Hành**, cộng thêm:
-- ✅ Tư vấn cấu trúc gia sản 1:1 (Di chúc, Trust, Holding)
-- ✅ Kết nối chuyên gia pháp lý + đầu tư
-- ✅ FinPeace AI Assistant VIP (tùy chỉnh cho gia đình)
-- ✅ Dedicated coach + Hotline riêng
-- ✅ Dashboard theo dõi tiến trình riêng
-- ✅ Tham gia **FinPeace Family Circle** — cộng đồng các gia đình
-- 💳 Thanh toán 1 lần hoặc 4 đợt theo quý
-
-> *~11.6 triệu/session · Bằng 1 bữa fine dining — nhưng giá trị kéo dài cả đời*
+#### 👶 Cấu phần 2: Dành cho Con (Ươm Mầm Tư Duy Tài Chính & Đồng Hành)
+- ✅ **12 phiên đồng hành cố vấn tài chính gia đình** theo lộ trình riêng
+- ✅ **Tài liệu học tập Bình An Tài Chính** - Bộ Quản lý tài chính cá nhân thế hệ mới
 
 ---
 

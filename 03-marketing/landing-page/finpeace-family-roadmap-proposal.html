@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>FinPeace Family — Lộ Trình Triển Khai Tư Vấn Tài Chính Gia Đình</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Be Vietnam Pro', -apple-system, sans-serif;
+      color: #111827;
+      background-color: #FFFFFF;
+      font-size: 12.5px;
+      line-height: 1.5;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* Page Container */
+    .page-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      background: #FFFFFF;
+    }
+
+    /* Top Brand Header matching fm.finpeace.cloud */
+    .brand-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+      border-bottom: 2px solid #E5E7EB;
+    }
+
+    .brand-title {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #10281E;
+    }
+
+    .brand-title span {
+      color: #38C68B;
+    }
+
+    .doc-type-badge {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #1B4332;
+      background: #E8F0E4;
+      padding: 4px 10px;
+      border-radius: 4px;
+      border: 1px solid #C2E0B8;
+    }
+
+    /* Header Banner */
+    .header-banner {
+      background: linear-gradient(135deg, #10281E 0%, #1B4332 70%, #1A2D56 100%);
+      color: #FFFFFF;
+      padding: 22px 24px;
+      border-radius: 10px;
+      margin-bottom: 18px;
+      position: relative;
+    }
+
+    .tagline-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #38C68B;
+      margin-bottom: 6px;
+    }
+
+    .banner-heading {
+      font-size: 21px;
+      font-weight: 800;
+      line-height: 1.25;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+      letter-spacing: -0.3px;
+    }
+
+    .banner-subheading {
+      font-size: 12.5px;
+      color: #E8F0E4;
+      line-height: 1.4;
+    }
+
+    /* Section Headers */
+    .section-header {
+      margin-top: 16px;
+      margin-bottom: 10px;
+    }
+
+    .section-label {
+      font-size: 9.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #38C68B;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .section-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #10281E;
+      letter-spacing: -0.2px;
+    }
+
+    /* Stages Grid (Matching 3 Tiers UI) */
+    .stages-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .stage-card {
+      border: 1px solid #E5E7EB;
+      border-radius: 8px;
+      padding: 12px 10px;
+      background: #FFFFFF;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stage-card.recommended {
+      border: 2px solid #D4A853;
+      background: #FFFCF5;
+    }
+
+    .recommended-badge {
+      position: absolute;
+      top: -9px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #D4A853;
+      color: #FFFFFF;
+      font-size: 8.5px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+
+    .stage-header-tag {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-bottom: 6px;
+      display: inline-block;
+      align-self: flex-start;
+    }
+
+    .stage-1 .stage-header-tag { background: #E8F0E4; color: #1B4332; }
+    .stage-2 .stage-header-tag { background: #D1FAE5; color: #065F46; }
+    .stage-3 .stage-header-tag { background: #FEF3C7; color: #92400E; }
+
+    .stage-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: #10281E;
+      margin-bottom: 8px;
+    }
+
+    .stage-list {
+      list-style: none;
+      font-size: 11px;
+      color: #374151;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .stage-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 5px;
+      line-height: 1.35;
+    }
+
+    .stage-list li::before {
+      content: '✓';
+      color: #38C68B;
+      font-weight: 700;
+      font-size: 11px;
+      flex-shrink: 0;
+    }
+
+    .stage-3 .stage-list li::before {
+      color: #D4A853;
+    }
+
+    /* Step-by-Step Execution Plan */
+    .execution-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .execution-item {
+      border: 1px solid #E5E7EB;
+      border-left: 4px solid #1B4332;
+      border-radius: 6px;
+      padding: 10px 12px;
+      background: #F9FAFB;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .execution-item.item-0 { border-left-color: #6B7280; background: #F3F4F6; }
+    .execution-item.item-1 { border-left-color: #1B4332; background: #F4F7F4; }
+    .execution-item.item-2 { border-left-color: #38C68B; background: #ECFDF5; }
+    .execution-item.item-3 { border-left-color: #D4A853; background: #FFFBEB; }
+
+    .item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    .item-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #10281E;
+    }
+
+    .item-tag {
+      font-size: 9.5px;
+      font-weight: 600;
+      padding: 1px 6px;
+      border-radius: 3px;
+      background: #FFFFFF;
+      border: 1px solid #D1D5DB;
+      color: #374151;
+    }
+
+    .item-body {
+      font-size: 11.5px;
+      color: #374151;
+      line-height: 1.45;
+    }
+
+    .item-body ul {
+      margin-left: 16px;
+      margin-top: 3px;
+    }
+
+    .item-body li {
+      margin-bottom: 2px;
+    }
+
+    /* Comparison Table */
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      font-size: 11px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .comp-table th, .comp-table td {
+      border: 1px solid #E5E7EB;
+      padding: 7px 9px;
+      text-align: left;
+    }
+
+    .comp-table th {
+      background: #10281E;
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 10.5px;
+    }
+
+    .comp-table tr:nth-child(even) {
+      background: #F9FAFB;
+    }
+
+    .text-center { text-align: center; }
+    .text-yes { color: #059669; font-weight: 700; }
+    .text-no { color: #9CA3AF; }
+
+    /* Footer */
+    .pdf-footer {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 2px solid #E5E7EB;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10.5px;
+      color: #4B5563;
+    }
+
+    .footer-brand {
+      font-weight: 700;
+      color: #10281E;
+    }
+
+    .footer-contact {
+      color: #6B7280;
+    }
+  </style>
+</head>
+<body>
+
+<div class="page-container">
+
+  <!-- BRAND TOP BAR -->
+  <div class="brand-top-bar">
+    <div class="brand-title">FinPeace <span>Family</span></div>
+    <div class="doc-type-badge">Tài Liệu Lộ Trình Triển Khai</div>
+  </div>
+
+  <!-- HEADER BANNER -->
+  <div class="header-banner">
+    <div class="tagline-label">Chương Trình Cố Vấn Tài Chính Gia Đình</div>
+    <div class="banner-heading">LỘ TRÌNH TRIỂN KHAI THỰC THI TỪNG BƯỚC</div>
+    <div class="banner-subheading">Từ Khám Phá Đến Toàn Diện — Xây dựng thói quen tài chính gia đình và bảo vệ di sản liên thế hệ</div>
+  </div>
+
+  <!-- SECTION 1 -->
+  <div class="section-header">
+    <span class="section-label">Giai Đoạn Đồng Hành</span>
+    <div class="section-title">1. Tổng Quan 3 Giai Đoạn Gói Dịch Vụ</div>
+  </div>
+
+  <div class="stages-grid">
+    <!-- Giai đoạn 1 -->
+    <div class="stage-card stage-1">
+      <div class="stage-header-tag">Giai đoạn 1: Hiểu bản thân</div>
+      <div class="stage-title">Gói Khám Phá</div>
+      <ul class="stage-list">
+        <li><strong>Rà soát & Lập kế hoạch tài chính gia đình:</strong> Phân tích sức khỏe tài chính tổng thể</li>
+        <li><strong>3 phiên tư vấn lập kế hoạch tài chính gia đình:</strong> Làm việc trực tiếp cùng Cố vấn</li>
+        <li>Xác định bức tranh tài sản và tư vị niềm tin tiền bạc trong gia đình</li>
+      </ul>
+    </div>
+
+    <!-- Giai đoạn 2 -->
+    <div class="stage-card stage-2">
+      <div class="stage-header-tag">Giai đoạn 2: Hiểu phương pháp</div>
+      <div class="stage-title">Gói Đồng Hành</div>
+      <ul class="stage-list">
+        <li><strong>Bao gồm toàn bộ Gói Khám Phá</strong></li>
+        <li><strong>Khóa học Tinh hoa đầu tư dài hạn:</strong> Đào tạo phương pháp phân bổ tài sản</li>
+        <li><strong>24 tháng Đồng hành Tích sản:</strong> Quản trị danh mục và theo dõi kỷ luật tích sản</li>
+      </ul>
+    </div>
+
+    <!-- Giai đoạn 3 -->
+    <div class="stage-card stage-3 recommended">
+      <div class="recommended-badge">Lựa Chọn Khuyên Dùng</div>
+      <div class="stage-header-tag">Giai đoạn 3: Hành động từng bước</div>
+      <div class="stage-title">Gói Toàn Diện</div>
+      <ul class="stage-list">
+        <li><strong>Bao gồm toàn bộ Gói Khám Phá & Đồng Hành</strong></li>
+        <li><strong>12 phiên đồng hành cố vấn tài chính gia đình:</strong> Cố vấn chuyên sâu 1:1 trọn vẹn cả năm</li>
+        <li>Tư vấn cấu trúc gia sản (Di chúc, Tín thác, Công ty gia đình) và Hỗ trợ liên tục 24/7</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SECTION 2 -->
+  <div class="section-header">
+    <span class="section-label">Quy Trình Triển Khai</span>
+    <div class="section-title">2. Cách Thức Triển Khai Thực Thi Từng Bước</div>
+  </div>
+
+  <div class="execution-list">
+    <!-- Bước 0 -->
+    <div class="execution-item item-0">
+      <div class="item-top">
+        <div class="item-title">Phiên Tư Vấn Khởi Động 0 (Trải Nghiệm Khởi Đầu)</div>
+        <div class="item-tag">60 Phút Khởi Động</div>
+      </div>
+      <div class="item-body">
+        <ul>
+          <li><strong>Hình thức làm việc:</strong> Buổi làm việc 60 phút trực tiếp (Trực tuyến hoặc Trực tiếp) cùng Cố vấn FinPeace.</li>
+          <li><strong>Nội dung thực thi:</strong> Lắng nghe nhu cầu thực tế ➔ Đánh giá mức độ sẵn sàng của gia đình ➔ Thống nhất lựa chọn Gói dịch vụ phù hợp.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bước 1 -->
+    <div class="execution-item item-1">
+      <div class="item-top">
+        <div class="item-title">Bước 1: Triển Khai Giai Đoạn 1 — Hiểu Bản Thân (Gói Khám Phá)</div>
+        <div class="item-tag">3 Phiên Tư Vấn</div>
+      </div>
+      <div class="item-body">
+        <ul>
+          <li><strong>Rà soát & Lập kế hoạch tài chính gia đình:</strong> Thu thập dữ liệu tài sản, dòng tiền, bảo hiểm và mục tiêu hưu trí để rà soát toàn diện.</li>
+          <li><strong>Phiên tư vấn 1:</strong> Đánh giá và bàn giao Bức tranh Sức khỏe Tài chính Gia đình.</li>
+          <li><strong>Phiên tư vấn 2:</strong> Nhận diện thói quen và tư duy niềm tin tiền bạc vô thức của từng thành viên.</li>
+          <li><strong>Phiên tư vấn 3:</strong> Thảo luận và thống nhất Mục tiêu Tài chính Chung cho cả gia đình.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bước 2 -->
+    <div class="execution-item item-2">
+      <div class="item-top">
+        <div class="item-title">Bước 2: Triển Khai Giai Đoạn 2 — Hiểu Phương Pháp (Gói Đồng Hành)</div>
+        <div class="item-tag">Đào Tạo & 24 Tháng Tích Sản</div>
+      </div>
+      <div class="item-body">
+        <ul>
+          <li><strong>Hoàn thành Bước 1</strong> (Rà soát tài chính và 3 phiên tư vấn lập kế hoạch).</li>
+          <li><strong>Kích hoạt Khóa học Tinh hoa đầu tư dài hạn:</strong> Cấp tài khoản học trực tuyến về phương pháp phân bổ tài sản cho cả gia đình.</li>
+          <li><strong>Kích hoạt 24 Tháng Đồng hành Tích sản:</strong> Thiết lập danh mục tích sản ban đầu ➔ Theo dõi & nhắc nhở kỷ luật tích sản hàng tháng ➔ Đánh giá và cân bằng lại danh mục định kỳ hàng quý.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bước 3 -->
+    <div class="execution-item item-3">
+      <div class="item-top">
+        <div class="item-title">Bước 3: Triển Khai Giai Đoạn 3 — Hành Động Từng Bước (Gói Toàn Diện)</div>
+        <div class="item-tag">12 Phiên/Năm & Hỗ Trợ 24/7</div>
+      </div>
+      <div class="item-body">
+        <ul>
+          <li><strong>Bao gồm trọn gói Bước 1 và Bước 2.</strong></li>
+          <li><strong>Lịch trình 12 Phiên Cố vấn Tài chính Gia đình (1 phiên/tháng x 12 tháng):</strong> Định kỳ hàng tháng làm việc trực tiếp cùng Cố vấn để kiểm soát tiến độ kế hoạch, hướng dẫn thực hành quản lý ngân sách/đầu tư thực tế cho con, và xử lý bài toán phát sinh (Hiến chương Gia đình, Di chúc, Cấu trúc Gia sản).</li>
+          <li><strong>Đồng hành thực thi liên tục 24/7:</strong> Duy trì Nhóm trao đổi riêng giữa Cố vấn và Gia đình để giải đáp thắc mắc và xử lý tình huống thời gian thực.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2.5: QUY TRÌNH 6 BƯỚC LẬP KẾ HOẠCH TÀI CHÍNH GIA ĐÌNH -->
+  <div class="section-header">
+    <span class="section-label">Quy Trình Chuẩn Mực</span>
+    <div class="section-title">3. Quy Trình 6 Bước Lập Kế Hoạch Tài Chính Gia Đình</div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 16px; page-break-inside: avoid; break-inside: avoid;">
+    <div style="border: 1px solid #E5E7EB; border-radius: 6px; padding: 8px 10px; background: #FFFFFF;">
+      <div style="font-size: 10px; font-weight: 700; color: #38C68B; text-transform: uppercase;">Bước 1</div>
+      <div style="font-size: 11.5px; font-weight: 700; color: #10281E; margin-bottom: 3px;">Rà Soát & Khám Phá Sức Khỏe Tài Chính</div>
+      <div style="font-size: 10.5px; color: #4B5563;">Kiểm kê toàn bộ bức tranh tài sản, nợ, dòng tiền sinh hoạt, bảo hiểm & quỹ dự phòng gia đình.</div>
+    </div>
+    <div style="border: 1px solid #E5E7EB; border-radius: 6px; padding: 8px 10px; background: #FFFFFF;">
+      <div style="font-size: 10px; font-weight: 700; color: #38C68B; text-transform: uppercase;">Bước 2</div>
+      <div style="font-size: 11.5px; font-weight: 700; color: #10281E; margin-bottom: 3px;">Giải Mã Tư Duy & Niềm Tin Tiền Bạc</div>
+      <div style="font-size: 10.5px; color: #4B5563;">Khám phá các niềm tin vô thức (Money Script), khẩu vị rủi ro & thói quen sử dụng tiền của từng thành viên.</div>
+    </div>
+    <div style="border: 1px solid #E5E7EB; border-radius: 6px; padding: 8px 10px; background: #FFFFFF;">
+      <div style="font-size: 10px; font-weight: 700; color: #38C68B; text-transform: uppercase;">Bước 3</div>
+      <div style="font-size: 11.5px; font-weight: 700; color: #10281E; margin-bottom: 3px;">Thiết Lập Ngân Sách & Phân Bổ Dòng Tiền</div>
+      <div style="font-size: 10.5px; color: #4B5563;">Áp dụng hệ thống 6 Hũ tài chính cá nhân & gia đình, phân biệt rõ nhu cầu thực tế và cảm xúc mua sắm bốc đồng.</div>
+    </div>
+    <div style="border: 1px solid #E5E7EB; border-radius: 6px; padding: 8px 10px; background: #FFFFFF;">
+      <div style="font-size: 10px; font-weight: 700; color: #38C68B; text-transform: uppercase;">Bước 4</div>
+      <div style="font-size: 11.5px; font-weight: 700; color: #10281E; margin-bottom: 3px;">Quản Trị Rủi Ro & Cấu Trúc Bảo Vệ Gia Sản</div>
+      <div style="font-size: 10.5px; color: #4B5563;">Thiết lập tầng phòng thủ tài chính, tham vấn di chúc, Hiến chương gia đình và phương án chuyển giao tài sản.</div>
+    </div>
+    <div style="border: 1px solid #E5E7EB; border-radius: 6px; padding: 8px 10px; background: #FFFFFF;">
+      <div style="font-size: 10px; font-weight: 700; color: #38C68B; text-transform: uppercase;">Bước 5</div>
+      <div style="font-size: 11.5px; font-weight: 700; color: #10281E; margin-bottom: 3px;">Danh Mục Tích Sản & Đầu Tư Dài Hạn</div>
+      <div style="font-size: 10.5px; color: #4B5563;">Đào tạo phương pháp phân bổ tài sản, giao vốn thực tế cho con quản lý quỹ tích sản riêng dưới sự hướng dẫn chuyên sâu.</div>
+    </div>
+    <div style="border: 1px solid #E5E7EB; border-radius: 6px; padding: 8px 10px; background: #FFFFFF;">
+      <div style="font-size: 10px; font-weight: 700; color: #38C68B; text-transform: uppercase;">Bước 6</div>
+      <div style="font-size: 11.5px; font-weight: 700; color: #10281E; margin-bottom: 3px;">Theo Dõi, Review & Cân Bằng Định Kỳ</div>
+      <div style="font-size: 10.5px; color: #4B5563;">Duy trì nếp họp tài chính gia đình hàng tháng, đồng hành 24 tháng theo dõi kỷ luật tích sản và tái cân bằng danh mục.</div>
+    </div>
+  </div>
+
+  <!-- SECTION 2.6: GIÁ TRỊ NHẬN ĐƯỢC TỪ GÓC ĐỘ KHÁCH HÀNG -->
+  <div class="section-header">
+    <span class="section-label">Góc Nhìn Khách Hàng</span>
+    <div class="section-title">4. Giá Trị Cốt Lõi Gia Đình Nhận Được</div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 16px; page-break-inside: avoid; break-inside: avoid;">
+    <div style="border: 1px solid #E5E7EB; border-radius: 6px; padding: 10px; background: #F9FAFB;">
+      <div style="font-size: 11px; font-weight: 700; color: #10281E; margin-bottom: 3px;">An Tâm Tuyệt Đối Về Tương Lai</div>
+      <div style="font-size: 10.5px; color: #4B5563;">Minh bạch bức tranh tài sản gia đình, xóa bỏ hoang mang cô đơn và rủi ro tranh chấp.</div>
+    </div>
+    <div style="border: 1px solid #E5E7EB; border-radius: 6px; padding: 10px; background: #F9FAFB;">
+      <div style="font-size: 11px; font-weight: 700; color: #10281E; margin-bottom: 3px;">Con Cái Tự Lập & Vững Vàng</div>
+      <div style="font-size: 10.5px; color: #4B5563;">Con tự chủ dòng tiền cá nhân, loại bỏ chi tiêu cảm xúc, có năng lực tích sản & bảo vệ tài sản.</div>
+    </div>
+    <div style="border: 1px solid #E5E7EB; border-radius: 6px; padding: 10px; background: #F9FAFB;">
+      <div style="font-size: 11px; font-weight: 700; color: #10281E; margin-bottom: 3px;">Hai Thế Hệ Gắn Kết & Thấu Hiểu</div>
+      <div style="font-size: 10.5px; color: #4B5563;">Phá vỡ khoảng cách, biến câu chuyện tiền bạc thành nếp đối thoại gia đình ấm áp trên bàn ăn.</div>
+    </div>
+    <div style="border: 1px solid #E5E7EB; border-radius: 6px; padding: 10px; background: #F9FAFB;">
+      <div style="font-size: 11px; font-weight: 700; color: #10281E; margin-bottom: 3px;">Di Sản Được Bảo Vệ Kiên Cố</div>
+      <div style="font-size: 10.5px; color: #4B5563;">Hoàn thiện Hiến chương, di chúc và cấu trúc pháp lý, đảm bảo tài sản không bị thất thoát.</div>
+    </div>
+    <div style="border: 1px solid #E5E7EB; border-radius: 6px; padding: 10px; background: #F9FAFB;">
+      <div style="font-size: 11px; font-weight: 700; color: #10281E; margin-bottom: 3px;">Phương Pháp Quản Trị Trọn Đời</div>
+      <div style="font-size: 10.5px; color: #4B5563;">Sở hữu hệ thống công cụ, kỷ luật tích sản 24 tháng và tư duy quản lý tài chính chuẩn mực.</div>
+    </div>
+    <div style="border: 1px solid #E5E7EB; border-radius: 6px; padding: 10px; background: #F9FAFB;">
+      <div style="font-size: 11px; font-weight: 700; color: #10281E; margin-bottom: 3px;">Bình An Tâm Trí Cho Ba Mẹ</div>
+      <div style="font-size: 10.5px; color: #4B5563;">Ba mẹ thảnh thơi tận hưởng cuộc sống, tự hào nhìn con sẵn sàng kế thừa và phát triển cơ nghiệp.</div>
+    </div>
+  </div>
+
+  <!-- SECTION 5 -->
+  <div class="section-header">
+    <span class="section-label">So Sánh Quyền Lợi</span>
+    <div class="section-title">5. Bảng So Sánh Quyền Lợi & Cấp Độ Triển Khai</div>
+  </div>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th style="width: 43%;">Quyền lợi & Nội dung triển khai</th>
+        <th style="width: 19%; text-align: center;">Gói Khám Phá</th>
+        <th style="width: 19%; text-align: center;">Gói Đồng Hành</th>
+        <th style="width: 19%; text-align: center; background: #D4A853; color: #10281E;">Gói Toàn Diện</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Rà soát & Lập kế hoạch tài chính gia đình</strong></td>
+        <td class="text-center text-yes">✓ Có</td>
+        <td class="text-center text-yes">✓ Có</td>
+        <td class="text-center text-yes">✓ Có</td>
+      </tr>
+      <tr>
+        <td><strong>Số phiên tư vấn lập kế hoạch tài chính</strong></td>
+        <td class="text-center">3 Phiên</td>
+        <td class="text-center">3 Phiên</td>
+        <td class="text-center" style="font-weight: 700; color: #92400E;">12 Phiên trọn năm</td>
+      </tr>
+      <tr>
+        <td><strong>Khóa học Tinh hoa đầu tư dài hạn</strong></td>
+        <td class="text-center text-no">—</td>
+        <td class="text-center text-yes">✓ Trực tuyến</td>
+        <td class="text-center text-yes">✓ Trực tuyến</td>
+      </tr>
+      <tr>
+        <td><strong>24 Tháng Đồng hành Tích sản</strong></td>
+        <td class="text-center text-no">—</td>
+        <td class="text-center text-yes">✓ 24 Tháng</td>
+        <td class="text-center text-yes">✓ 24 Tháng</td>
+      </tr>
+      <tr>
+        <td><strong>Tư vấn Cấu trúc Gia sản (Di chúc, Holding, Trust)</strong></td>
+        <td class="text-center text-no">—</td>
+        <td class="text-center text-no">—</td>
+        <td class="text-center text-yes">✓ Chuyên sâu 1:1</td>
+      </tr>
+      <tr>
+        <td><strong>Kênh hỗ trợ & Trao đổi riêng với Cố vấn</strong></td>
+        <td class="text-center text-no">—</td>
+        <td class="text-center">Hòm thư hỗ trợ</td>
+        <td class="text-center text-yes">✓ Nhóm riêng 24/7</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- FOOTER -->
+  <div class="pdf-footer">
+    <div class="footer-brand">FINPEACE FAMILY — CHƯƠNG TRÌNH CỐ VẤN TÀI CHÍNH GIA ĐÌNH</div>
+    <div class="footer-contact">Website: finpeace.vn | Email: hello@finpeace.vn</div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
         quote: "“Con chủ động hỏi mẹ về ngân sách sinh hoạt gia đình — điều mà 16 năm qua chưa từng xảy ra.”",
         sessions: [
           "Session 1: Family Financial Health Check — Nhận diện bức tranh ngân sách sinh hoạt gia đình.",
-          "Session 2: Money Script Discovery — Khám phá niềm tin vô thức về tiền của con và ba mẹ.",
-          "Session 3: Generational Storytelling — Ba mẹ kể câu chuyện lập nghiệp thật, xóa bỏ khoảng cách."
+          "Session 2: Money Script Discovery — Khám phá niềm tin vô thức về tiền của con và cha mẹ.",
+          "Session 3: Generational Storytelling — Cha mẹ kể câu chuyện lập nghiệp thật, xóa bỏ khoảng cách."
         ]
       },
       {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sessions: [
           "Session 4: Hệ thống 6 Hũ Cá Nhân — Phân bổ ngân sách tiêu vặt theo mục tiêu riêng của con.",
           "Session 5: Thử thách 30 ngày Cần vs Muốn — Phân biệt rõ nhu cầu thực tế và cảm xúc bốc đồng.",
-          "Session 6: Shark Tank Mini Gia Đình — Con pitch ý tưởng dự án nhỏ cùng ba mẹ để nhận vốn mini."
+          "Session 6: Shark Tank Mini Gia Đình — Con pitch ý tưởng dự án nhỏ cùng cha mẹ để nhận vốn mini."
         ]
       },
       {
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         quote: "“Bàn ăn gia đình chính thức trở thành nơi ấm áp nhất để bàn về tương lai, thói quen và tài sản.”",
         sessions: [
           "Session 10: Tuyên ngôn Di sản — Đóng khung Tuyên ngôn giá trị gia đình tại không gian chung.",
-          "Session 11: Họp Tài chính Định kỳ — Duy trì nếp họp ấm áp 30 phút mỗi tháng giữa ba mẹ và con.",
+          "Session 11: Họp Tài chính Định kỳ — Duy trì nếp họp ấm áp 30 phút mỗi tháng giữa cha mẹ và con.",
           "Session 12: Lễ Trưởng thành Tài chính — Báo cáo chuyển biến 12 tháng & trao Chứng chỉ FinPeace Family Mentoring."
         ]
       }
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
      ------------------------------------------------------------------------ */
   const quizSteps = [
     {
-      question: "1. Con của ba mẹ hiện đang ở độ tuổi nào?",
+      question: "1. Con của cha mẹ hiện đang ở độ tuổi nào?",
       options: [
         { text: "8 – 12 tuổi (Giai đoạn gieo hạt thói quen)", score: 10 },
         { text: "13 – 17 tuổi (Giai đoạn vàng quản lý dòng tiền)", score: 20 },
@@ -198,10 +198,10 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     {
-      question: "3. Trăn trở lớn nhất của ba mẹ đối với con hiện tại là gì?",
+      question: "3. Trăn trở lớn nhất của cha mẹ đối với con hiện tại là gì?",
       options: [
         { text: "Lo con chi tiêu nông nổi, FOMO theo bạn bè", score: 15 },
-        { text: "Lo con thụ động, chưa biết trân trọng công sức ba mẹ", score: 20 },
+        { text: "Lo con thụ động, chưa biết trân trọng công sức cha mẹ", score: 20 },
         { text: "Lo con chưa đủ năng lực gánh vác & gìn giữ gia sản", score: 25 }
       ]
     }
@@ -249,13 +249,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (totalScore >= 60) {
         resultText = "Gia Đình Đang Trong 'Cửa Sổ Vàng' Giáo Dục Tài Chính!";
-        adviceText = "Con của ba mẹ đã có nền tảng nhận thức tốt. Đây là thời điểm chiến lược nhất để đưa con vào chương trình FinPeace Family Mentoring, chuẩn bị kế thừa gia sản.";
+        adviceText = "Con của cha mẹ đã có nền tảng nhận thức tốt. Đây là thời điểm chiến lược nhất để đưa con vào chương trình FinPeace Family Mentoring, chuẩn bị kế thừa gia sản.";
       } else if (totalScore >= 35) {
         resultText = "Con Cần Hệ Thống 6 Hũ & Kênh Đối Thoại Mở!";
         adviceText = "Gia đình có tinh thần cởi mở nhưng thiếu khuôn khổ quản trị dòng tiền. Chương trình FinPeace Family Mentoring sẽ giúp gia đình xây dựng thói quen thấu hiểu trong 12 tháng.";
       } else {
         resultText = "Cần Mở Kênh Đối Thoại An Toàn Đầu Tiên!";
-        adviceText = "Rào cản tâm lý né tránh tiền bạc đang ngăn cản con hiểu công sức ba mẹ. Session 0 Miễn Phí (60 phút) sẽ giúp xóa bỏ khoảng cách này.";
+        adviceText = "Rào cản tâm lý né tránh tiền bạc đang ngăn cản con hiểu công sức cha mẹ. Session 0 Miễn Phí (60 phút) sẽ giúp xóa bỏ khoảng cách này.";
       }
 
       quizContainer.innerHTML = `
@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (sessionForm) {
     sessionForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      alert('Cảm ơn Ba Mẹ! Chuyên gia FinPeace Family Mentoring sẽ liên hệ trong vòng 24h để sắp xếp lịch Session 0.');
+      alert('Cảm ơn Cha Mẹ! Chuyên gia FinPeace Family Mentoring sẽ liên hệ trong vòng 24h để sắp xếp lịch Session 0.');
       if (modal) modal.classList.remove('active');
       sessionForm.reset();
     });
